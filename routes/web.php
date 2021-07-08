@@ -1,5 +1,10 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+
+Auth::routes();
+require 'admin.php';
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +16,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+//  Route::view('/admin','admin.dashboard/index');
+//  Route::view('/admin/login','admin.auth.login');
